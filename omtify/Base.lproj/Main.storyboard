@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,50 +15,111 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZg-yf-CSg">
-                                <rect key="frame" x="119" y="156" width="177" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.14947035908699036" green="0.28315791487693787" blue="0.37192565202713013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Ankhon me teri - KK"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ed-yD-4kD">
-                                <rect key="frame" x="119" y="410" width="177" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.086274509799999996" green="0.16078431369999999" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Ae dil hai mushkil"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0S-2r-2mg">
-                                <rect key="frame" x="119" y="651" width="177" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.086274509799999996" green="0.16078431369999999" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Bekhayali"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OMIFY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLc-OU-o61">
-                                <rect key="frame" x="142" y="32" width="131" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
-                                <color key="textColor" systemColor="systemGrayColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OMIFY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFd-vs-D3H">
+                                <rect key="frame" x="0.0" y="48" width="414" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <color key="textColor" red="0.39687985320873764" green="0.11073713693997528" blue="0.4252289534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0S-2r-2mg">
+                                <rect key="frame" x="97" y="753" width="221" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.16078431369999999" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="TALK BY ATC">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.30907585238846297" green="0.10459019728230567" blue="0.37192565202713013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="songButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ngd-pf-5TX"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="closer" translatesAutoresizingMaskIntoConstraints="NO" id="F4B-cB-gyB">
+                                <rect key="frame" x="0.0" y="459" width="414" height="360"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="OMIFY-2" translatesAutoresizingMaskIntoConstraints="NO" id="OeX-Jl-6Uj">
+                                <rect key="frame" x="0.0" y="163" width="414" height="166.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3b6-Hp-8sg">
+                                <rect key="frame" x="177" y="416" width="60" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <action selector="NextScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hD4-cg-EV6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OeX-Jl-6Uj" firstAttribute="top" secondItem="mFd-vs-D3H" secondAttribute="bottom" id="1rg-nh-QnJ"/>
+                            <constraint firstItem="mFd-vs-D3H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4h5-hq-NKh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F4B-cB-gyB" secondAttribute="trailing" id="7az-g2-5X0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mFd-vs-D3H" secondAttribute="trailing" id="BoC-3d-lQb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F4B-cB-gyB" secondAttribute="bottom" id="INL-Nm-7jy"/>
+                            <constraint firstItem="mFd-vs-D3H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nlh-QB-b5r"/>
+                            <constraint firstItem="OeX-Jl-6Uj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RQ9-VD-y98"/>
+                            <constraint firstItem="OeX-Jl-6Uj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="U9U-bO-6nV"/>
+                            <constraint firstItem="OeX-Jl-6Uj" firstAttribute="top" secondItem="mFd-vs-D3H" secondAttribute="bottom" id="XHZ-vM-dS5"/>
+                            <constraint firstAttribute="trailing" secondItem="mFd-vs-D3H" secondAttribute="trailing" id="YJ3-Al-uIn"/>
+                            <constraint firstItem="mFd-vs-D3H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c4K-R9-SSv"/>
+                            <constraint firstItem="OeX-Jl-6Uj" firstAttribute="top" secondItem="mFd-vs-D3H" secondAttribute="bottom" constant="130" id="cOk-NX-IAA"/>
+                            <constraint firstItem="F4B-cB-gyB" firstAttribute="top" secondItem="OeX-Jl-6Uj" secondAttribute="bottom" id="caa-qK-ofI"/>
+                            <constraint firstItem="OeX-Jl-6Uj" firstAttribute="top" secondItem="mFd-vs-D3H" secondAttribute="bottom" constant="60" id="gX0-5i-Sob"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OeX-Jl-6Uj" secondAttribute="trailing" id="oHw-1G-pKe"/>
+                            <constraint firstItem="F4B-cB-gyB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pEZ-7H-RLN"/>
+                            <constraint firstItem="OeX-Jl-6Uj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vdU-7M-Fa5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="Uyz-KO-fNS" kind="presentation" identifier="GoToNext" id="kyH-s3-bie"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20.289855072463769" y="3.3482142857142856"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="3dh-PZ-iW9">
+            <objects>
+                <viewController id="Uyz-KO-fNS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LN0-dc-Xjy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OMIFY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqG-jT-yoT">
+                                <rect key="frame" x="139" y="65" width="137" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <color key="textColor" red="0.30907585240000002" green="0.10459019730000001" blue="0.371925652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="OMIFY-2" translatesAutoresizingMaskIntoConstraints="NO" id="Enj-eo-5y8">
+                                <rect key="frame" x="124" y="181" width="167" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vl9-mi-ETs">
+                                <rect key="frame" x="106" y="492" width="202" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.30907585240000002" green="0.10459019730000001" blue="0.371925652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Aankhon me tteri">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="du4-1K-Ayf"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9a-MA-T3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879.71014492753625" y="26.785714285714285"/>
+        </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="OMIFY-2" width="166.5" height="166.5"/>
+        <image name="closer" width="640" height="360"/>
     </resources>
 </document>
